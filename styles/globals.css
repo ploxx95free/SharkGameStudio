@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .h1 {
+    @apply font-gotham text-white text-3xl leading-8  sm:text-4xl  lg:text-5xl;
+  }
+ 
+  .h3{
+    @apply font-gotham text-white text-3xl leading-8  sm:text-[32px] lg:leading-9 lg:text-[40px];
+  }
+
+  .h4{
+    @apply font-gotham text-white text-2xl lg:text-[32px]
+  }
+  .title{
+
+  }
+  .subtitleRight{
+    @apply text-right relative py-2 px-0 before:content-[''] before:block before:w-10 before:h-[2px] before:absolute before:left-0 before:top-1/2;
+  }
+  .buttonMedium{
+    @apply   cursor-pointer text-base font-gotham text-white rounded-full px-6 py-4  bg-gradient-to-tr  from-gradient2-100 to-gradient1-100 hover:from-pink-500 hover:to-yellow-500;
+  }
+
+
+}
+
+/* @apply  w-[270px] text-right relative py-2 px-0 before:content-[''] before:block before:w-10 before:h-[2px] before:absolute before:left-0 before:top-1/2 */
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/GothamBold.ttf");
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.twoGradient{
+  background: 
+  linear-gradient(180deg, rgba(28, 28, 40, 0.8) 0%, rgba(28, 28, 40, 0) 77.78%),linear-gradient(360deg, #1C1C28 0%, rgba(28, 28, 40, 0) 77.78%);
+}
+
+.oneGradient{
+  background: 
+  linear-gradient(180deg, rgba(28, 28, 40, 0.8) 0%, rgba(28, 28, 40, 0) 77.78%);
+  background-color: #1C1C28;
+}
+.subtitle{
+  text-align: center;
+  position:relative;
+  padding: 8px 0px;
+}
+
+.subtitle::before{
+  content: "";
+  display:block;
+  width: 40px;
+  height:2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  }
+  .subtitle::after{
+  content: "";
+  display:block;
+  width: 40px;
+  height:2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  }
+
+  .elipse{
+    /* Ellipse 508 */
+    position: absolute;
+
+    /* Medley/Gradient */
+    background: linear-gradient(267.28deg, #7B61FF 24%, #AA82FF 73.95%);
+    opacity: 0.2;
+    filter: blur(200px);
+  }
+
+/* <main className="bg-[#1C1C28] py-8 ">
+<div className="h-10 grid grid-cols-6 gap-[53px] px-96">
+  <div className=" w-full h-full relative">
+    <Image
+      alt="Zbrush"
+      src="/img/zbrush.png"
+      layout="fill"
+      objectFit="contain"
+    />
+  </div>
+  <div className="w-full h-full relative">
+    <Image
+      alt="Zbrush"
+      src="/img/maya.png"
+      layout="fill"
+      objectFit="contain"
+    />
+  </div>
+  <div className="w-full h-full relative">
+    <Image
+      alt="Zbrush"
+      src="/img/blender.png"
+      layout="fill"
+      objectFit="contain"
+    />
+  </div>
+  <div className="w-full h-full relative">
+    <Image
+      alt="Zbrush"
+      src="/img/ue5.png"
+      layout="fill"
+      objectFit="contain"
+    />
+  </div>
+  <div className="w-full h-full relative">
+    <Image
+      alt="Zbrush"
+      src="/img/unity.png"
+      layout="fill"
+      objectFit="contain"
+    />
+  </div>
+  <div className="w-full h-full relative">
+    <Image
+      alt="Zbrush"
+      src="/img/psd.png"
+      layout="fill"
+      objectFit="contain"
+    />
+  </div>
+</div> */
